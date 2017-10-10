@@ -12,7 +12,9 @@ class ProductList extends Component {
         // applied to the component as a `product` property
         return (
             <ul className="ProductList">
-
+                {products.map(product => {
+                    <Product product={product}/>
+                })}
             </ul>
         );
     }
